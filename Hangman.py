@@ -1,5 +1,31 @@
 import random
 
+def guess(take , blank):
+    Dash = len(blank)
+    
+    while(1):
+        choose = input("Guess letter or whole word: ").lower()
+        low = take.lower();
+        c_len = len(choose)
+        i = low.find(choose)
+        if(i != -1):
+            if(i == 0):
+                b = blank[c_len-1 : ]
+                V = choose+b;
+                print(V)
+            # else:
+            #     b1 = blank[ : i-2]
+            #     b = blank[c_len-1 : ] 
+            #     V = b1 + choose + b
+            #     print(V)
+            if(low == V):
+                print("You Won!!")
+                break
+
+
+    
+
+
 def Randoms(Words):
     res = key, val = random.choice(list(Words.items()))
     print(res[0])
@@ -7,7 +33,11 @@ def Randoms(Words):
     take = random.choice(choose);
     l = len(take)
     s = '_ '
-    print(l * s, "\n")
+    blank = l * s;
+    print(blank, "\n")
+    guess(take, blank)
+    
+    
 
 Words = {'COUNTRY': ['India', 'USA', 'Italy', 'New Zealand', 'Russia', 'Germany', 'Mexico', 'China', 'Canada', 'Japan'],
         'DAIRY': ['Milk', 'Butter', 'Cream', 'Cheese', 'Yoghurt', 'Ice-Cream', 'Ghee', 'Custard', 'Whipped Cream', 'Buttermilk'],
@@ -18,4 +48,9 @@ Words = {'COUNTRY': ['India', 'USA', 'Italy', 'New Zealand', 'Russia', 'Germany'
         'PLANET': ['Earth', 'Jupiter', 'Saturn', 'Venus', 'Mars', 'Mercury', 'Neptune', 'Uranus'],
         'BRAND': ['Apple', 'Nike', 'Adidas', 'Google', 'Microsoft', 'Amazon', 'BMW', 'IBM', 'Starbucks', 'Disney']}
 
-Randoms(Words)
+
+print('\nLets Play H.A.N.G.M.A.N!!!\n')
+Randoms(Words);
+
+
+
