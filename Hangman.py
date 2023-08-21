@@ -24,36 +24,27 @@ def Hangman(count):
         print("Try Again")
     elif(count == 8):
         print('___________________\n|     |\n|   .;;;.\n|   (*_*)\n|     |\n|    /|\ \n|   / | \ \n|    / \ \n|   /   \ ')
-        print("You Lose")
+        print("You Lose :(")
 
         
-
-
-def guess(take , blank):
-    Dash = len(blank)
+def guess(take , s):
     count = 0
-    
     while(count != 8):
         choose = input("Guess letter or whole word: ").lower()
         low = take.lower();
         i = low.find(choose)
+        if(choose == low):
+            print("You win!!!\n" + choose + " is a right word")
+            break
+
         if(i != -1):
-            print(choose)
-            if(low == choose):
-                print("You Won!!")
-                break
+            first = s * i
+            last = s * (len(low) - (i + len(choose)))
+            print(first + choose + last)   
         else:
             count += 1
             if(count < 9):
                 Hangman(count)
-
-                
-            
-
-            
-            
-
-
 
 def Randoms(Words):
     res = key, val = random.choice(list(Words.items()))
@@ -64,7 +55,7 @@ def Randoms(Words):
     s = '_  '
     blank = l * s;
     print(blank, "\n")
-    guess(take, blank)
+    guess(take, s)
     
     
 
