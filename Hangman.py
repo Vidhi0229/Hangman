@@ -1,29 +1,58 @@
 import random
 
+def Hangman(count):
+    if(count == 1):
+        print('___________________\n|\n|\n|\n|\n|\n|\n|')
+        print("Try Again")
+    elif(count == 2):
+        print('___________________\n|     |\n|\n|\n|\n|\n|\n|\n|')
+        print("Try Again")
+    elif(count == 3):
+        print('___________________\n|     |\n|   .;;;.\n|   (*_*)\n|\n|\n|\n|\n|')
+        print("Try Again")
+    elif(count == 4):
+        print('___________________\n|     |\n|   .;;;.\n|   (*_*)\n|     |\n|\n|\n|\n|')
+        print("Try Again")
+    elif(count == 5):
+        print('___________________\n|     |\n|   .;;;.\n|   (*_*)\n|     |\n|    /|\n|   / |\n|\n|')
+        print("Try Again")
+    elif(count == 6):
+        print('___________________\n|     |\n|   .;;;.\n|   (*_*)\n|     |\n|    /|\ \n|   / | \ \n|\n|')
+        print("Try Again")
+    elif(count == 7):
+        print('___________________\n|     |\n|   .;;;.\n|   (*_*)\n|     |\n|    /|\ \n|   / | \ \n|    /\n|   /')
+        print("Try Again")
+    elif(count == 8):
+        print('___________________\n|     |\n|   .;;;.\n|   (*_*)\n|     |\n|    /|\ \n|   / | \ \n|    / \ \n|   /   \ ')
+        print("You Lose")
+
+        
+
+
 def guess(take , blank):
     Dash = len(blank)
+    count = 0
     
-    while(1):
+    while(count != 8):
         choose = input("Guess letter or whole word: ").lower()
         low = take.lower();
-        c_len = len(choose)
         i = low.find(choose)
         if(i != -1):
-            if(i == 0):
-                b = blank[c_len-1 : ]
-                V = choose+b;
-                print(V)
-            # else:
-            #     b1 = blank[ : i-2]
-            #     b = blank[c_len-1 : ] 
-            #     V = b1 + choose + b
-            #     print(V)
-            if(low == V):
+            print(choose)
+            if(low == choose):
                 print("You Won!!")
                 break
+        else:
+            count += 1
+            if(count < 9):
+                Hangman(count)
 
+                
+            
 
-    
+            
+            
+
 
 
 def Randoms(Words):
@@ -32,7 +61,7 @@ def Randoms(Words):
     choose = list(res[1])
     take = random.choice(choose);
     l = len(take)
-    s = '_ '
+    s = '_  '
     blank = l * s;
     print(blank, "\n")
     guess(take, blank)
