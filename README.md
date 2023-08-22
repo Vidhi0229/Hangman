@@ -10,7 +10,7 @@ Python
 
 ## Live Demo
 
-[Try a live demo](https://onlinegdb.com/vioRT0IX0)
+[Try a live demo](https://www.onlinegdb.com/EY4oKdDC7)
 
 ## Getting Started
 
