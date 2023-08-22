@@ -2,7 +2,7 @@
 
 A Hangman game.
 
-Come and play Hangman game with terminal
+Come and play Hangman game on terminal
 
 ## Built With
 
