@@ -46,7 +46,7 @@ def guess(take):
                 b[i] = choose[j]
                 j += 1
                 i += 1
-            print(b)
+            print(' '.join(map(str, b)))
         else:
             count += 1
             if(count < 9):
