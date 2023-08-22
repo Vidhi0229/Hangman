@@ -25,7 +25,7 @@ def Hangman(count, take):
         
     elif(count == 8):
         print('___________________\n|     |\n|   .;;;.\n|   (*_*)\n|     |\n|    /|\ \n|   / | \ \n|    / \ \n|   /   \ ')
-        print("\nYOU LOSE :(\n the write word was " + take)
+        print("\nYOU LOSE :(\n The correct word was " + take)
 
 def guess(take):
     s = '_'
