@@ -6,5 +6,8 @@ Words = {'COUNTRY': ['India', 'USA', 'Italy', 'New Zealand', 'Russia', 'Germany'
         'PROFESSION': ['Teacher', 'Dentist', 'Physician', 'Architect', 'Lawyer', 'Software Developer', 'Artist', 'Police', 'Scientist', 'chef'],
         'PLANET': ['Earth', 'Jupiter', 'Saturn', 'Venus', 'Mars', 'Mercury', 'Neptune', 'Uranus'],
         'BRAND': ['Apple', 'Nike', 'Adidas', 'Google', 'Microsoft', 'Amazon', 'BMW', 'zara', 'Starbucks', 'Disney'],
-        'Vehicle': ['Van', 'car', 'Bus', 'Ambulance', 'Bicycle', 'Scooter', 'Motorcycle', 'Helicopter', 'Airplane', 'Boat', 'Train']}
+        'Vehicle': ['Van', 'car', 'Bus', 'Ambulance', 'Bicycle', 'Scooter', 'Motorcycle', 'Helicopter', 'Airplane', 'Boat', 'Train'],
+        'Feeling': ['Anger', 'Sadness', 'Anxiety', 'Fear', 'Happiness', 'Guilt', 'Disgust', 'Disappointment', 'Love'],
+        'Electronics': ['Computer', 'Refrigerator', 'Washing machine', 'Transistor', 'Microwave', 'Speaker', 'Printer', 'Juicer', 'Iron', 'Charger'],
+        'Social media': ['Instagram', 'Twitter', 'Facebook', 'Pinterest', 'LinkedIn', 'TikTok','YouTube', 'Reddit', 'Discord', 'Snapchat', 'Telegram']}
 
